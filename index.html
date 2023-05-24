@@ -4,50 +4,59 @@
 
 <head>
 	<meta charset="utf-8">
-
+	
 	<title>Sprint Challenge - Home</title>
-
+	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div>
 		<!-- header -->
 		<header>
-			<div>
-				BLOOMTECH BAR AND GRILL
+			<div class="site-header">
+				<h1><a href="index.html">BLOOMTECH BAR AND GRILL</a></h1>
+			<nav >
+				<div class="links">
+				<a href="menu.html"> Menu</a>
+				<a href="#reservations"> Reservations</a> 
+				<a href="#specialoffers"> Special Offers</a> 
+				<a href="#contact"> Contact</a> 
+				</div>
+			</nav>
+				<div class="social-links">
+					<i class="fa-brands fa-square-facebook fa-3x"> </i> 
+					<i class="fa-brands fa-square-twitter fa-3x"> </i> 
+				 	<i class="fa-brands fa-square-instagram fa-3x"></i> 
+				</div>
+			</div>	
 
-				<!-- nav -->
-				Menu
-				Reservations
-				Special Offers
-				Contact
-			</div>
 		</header>
 
 		<!-- gallery section -->
 		<section class="gallery">
 			<div>
 				<h2>OUR FOOD</h2>
+					<div class="food-img">
+						<img src="img/food-avocadotoast.jpg" alt="food-avocadotoast"> 
 
-				img/food-avocadotoast.jpg
+						<img src="img/food-burger.jpg" alt="food-burger"> 
 
-				img/food-burger.jpg
+						<img src="img/food-poutine.jpg" alt="food-poutine"> 
+						<img src="img/food-ribs.jpg" alt="food-ribs"> 
 
-				img/food-poutine.jpg
+						<img src="img/food-sandwich.jpg" alt="food-sandwich"> 
 
-				img/food-ribs.jpg
+						<img src="img/food-sausage.jpg" alt="food-sausage"> 
 
-				img/food-sandwich.jpg
+						<img src="img/food-steak.jpg" alt="food-steak"> 
 
-				img/food-sausage.jpg
+						<img src="img/food-tacos.jpg" alt="food-tacos"> 
 
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+						<img src="img/food-wings.jpg" alt="food-wings"> 
+				</div>
 			</div>
 		</section>
 
@@ -101,9 +110,9 @@
 
 						<div>
 							<p>Sunday to Thursday:</p>
-							<p>12:00p - 12:00a</p>
+							<p>12:00pm - 12:00am</p>
 							<p>Friday and Saturday:</p>
-							<p>12:00p - 4:00a</p>
+							<p>12:00pm - 4:00am</p>
 						</div>
 					</div>
 
@@ -127,13 +136,19 @@
 			<!-- email signup -->
 			Join our mailing list!
 			Sign Up
-			<!-- nav -->
-			Menu
-			Reservations
-			Special Offers
-			Contact
-			<!-- copyright -->
-			©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+			<div class="stackem">
+				<!-- nav -->
+				<nav class="main">
+			
+					<a href="menu.html"> Menu</a>
+					<a href="#reservations">Reservations</a> 
+					<a href="#specialoffers">Special Offers</a> 
+					<a href="#contact">Contact</a> 
+			
+				</nav>
+				<!-- copyright -->
+			 	<p class="copyright"> ©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</p>
+			</div> 
 		</footer>
 	</div>
 </body>
