@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 p, a {
@@ -88,7 +88,7 @@ p, a {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
@@ -100,9 +100,10 @@ header {
   background-color: rgba(5, 5, 5, 0.8);  
 }
 
-nav {
+nav .main{
     display: flex;
     justify-content: center;
+    flex-direction:column;
     align-items: center;
     
 }
@@ -131,56 +132,50 @@ h1 a{
 p{
     color: rgb(225, 239, 230)
 }
-.social-links {
+.social-links{
+    width:100%;
+    height:100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
        
 }
 .social-links i{
     color: rgb(225, 239, 230);
-    padding: 5%;
-    
-    
+    padding:3%;
+     
 }
 
 /* spacers */
 .spacer {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-color: rgb(0, 4, 17);
 }
 .spacer-sm {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-color: rgb(0, 4, 17);
 }
 
 /* gallery section */
+
 .gallery {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
     background-color: rgb(0, 4, 17);
+    padding-top: 5%;
     display: flex;
     justify-content:space-around;
     align-items: center;
-       
+
 }
-
- .gallery div{
+.food-img{
     display: flex;
-    justify-content:space-around;
-    flex-flow: row wrap;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     gap: 30px 30px;
-  
- }   
-    
-    
-    
-
-
+    padding:5%;
+}
 /* about us section */
 .about {
     width: 100%;
@@ -263,26 +258,52 @@ p{
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 50%;
     padding-top: 2.5vh;
     font-size: 3rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    align-items:baseline;
 }
 footer div{
-    width: 60%;
+    width:60%;
+}
+.sign-up{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap ;
+}
+form input{
+    
+    height:30px;
+    width:65%;
+}
+form button{
+    height:30px;
+    width: 35%;
+}
+  
+  
+ .sign-up h3{
+    height:45px;
+    width: 65%;
+    text-align: center;
+    color: black;
+    
     
 }
-
-.main{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items: center;
+.stackem{
+    height:100%;
+    width: 50%;
 }
-nav.main a{
-    width: 2% 0;
+.bottom a{
+    font-size: 3rem;
+    padding: 2%;
     color:black;
 }
 
@@ -302,7 +323,26 @@ nav.main a{
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    *{
+        font-size: 1rem;
+        
+    }
+    header{
+        padding-right: 5%;
+    }
+    nav a{
+        font-size: 2rem;
+
+    }
+    h1 a{
+        font-size: 4rem;
+    }
+    h1,h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 3rem;
+    }
 
     /* gallery section */
     .gallery {
@@ -312,7 +352,7 @@ nav.main a{
     /* about us section */
 
     .about {
-        height: 200vh;
+        height: 100vh;
     }
     
     .about h2 {
@@ -354,5 +394,35 @@ nav.main a{
             font-size: 2rem;
             display: flex;
             justify-content: space-around;
+      
+            
     }
+   h3{
+    font-size: medium;
+   }
+   
+    .info{
+        flex-direction: column;
+    }    
+   footer{
+    padding-left: 30%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+    
+   }
+   .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .bottom a{
+    font-size: 2rem;
+   }
+   .copyright{
+    font-size: small;
+   }
+ 
 }
